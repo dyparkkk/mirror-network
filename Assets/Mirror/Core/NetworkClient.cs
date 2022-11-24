@@ -10,7 +10,7 @@ namespace Mirror
     {
         None,
         // connecting between Connect() and OnTransportConnected()
-        Connecting,
+        Connecting, 
         Connected,
         // disconnecting between Disconnect() and OnTransportDisconnected()
         Disconnecting,
@@ -31,7 +31,7 @@ namespace Mirror
         // server.interval, etc.
         public static int sendRate => NetworkServer.sendRate;
         public static float sendInterval => sendRate < int.MaxValue ? 1f / sendRate : 0; // for 30 Hz, that's 33ms
-        static double lastSendTime;
+        static double lastSendTime; 
 
         // message handlers by messageId
         internal static readonly Dictionary<ushort, NetworkMessageDelegate> handlers =

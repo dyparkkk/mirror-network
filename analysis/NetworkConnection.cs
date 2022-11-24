@@ -24,7 +24,5 @@ namespace Mirror
     // 3. 배치된 메시지들을 실제로 전송하고 버퍼를 비움
     // max 메시지 사이즈를 넘기면 안됨 !
     internal virtual void Update() {}
-
-    // test
   }
 }
