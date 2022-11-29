@@ -30,9 +30,9 @@ namespace Mirror
         NetworkDiagnostics.OnSend(message, channelId, segment.Count, count);
       }
     }
-
-    // add/remove/replace player 
-    // ...
+    // add/remove/ connection
+    // add/remove/replace player (game object)
+    // 
 
     // SpawnObserverForConnection() 
     

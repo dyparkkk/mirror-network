@@ -8,7 +8,6 @@ using UnityEngine;
 namespace Mirror
 {
   public abstract class Transport : MonoBehaviour {
-    // 추상 클래스 안에 어떻게 본인의 객체가 있을 수 있지 ....? 
     public static Transport active;
     public Action<ArraySegment<byte>, int> OnClientDataReceived;
     public Action<ArraySegment<byte>, int> OnClientDataSent;
