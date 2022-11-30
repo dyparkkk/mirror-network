@@ -1,11 +1,13 @@
+using System;
+
 namespace Mirror
 {
   // partial :클래스, 인터페이스 등을 소스 코드 분할해서 정의할 수 있음.
-  //          컴파일할 때 합쳐짐 
+  //          컴파일할 때 합쳐짐
   public static partial class NetworkServer
   {
 
-    //  SendToAll, BroadcastToConnection, Broadcast 차이 ?? 
+    //  SendToAll, BroadcastToConnection, Broadcast 차이 ??
     public static void SendToAll<T>(T message, int channelId = Channels.Reliable, bool sendToReadyOnly = false)
       where T : struct, NetworkMessage
     {
@@ -32,11 +34,9 @@ namespace Mirror
     }
     // add/remove/ connection
     // add/remove/replace player (game object)
-    // 
+    //
 
-    // SpawnObserverForConnection() 
-    
-
+    // SpawnObserverForConnection()
 
   }
 }

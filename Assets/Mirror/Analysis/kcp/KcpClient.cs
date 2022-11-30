@@ -1,6 +1,8 @@
 /**
-* mirror나 닷넷 위한 kcp client logic 정의 
+* mirror나 닷넷 위한 kcp client logic 정의
 */
+
+using System;
 
 namespace kcp2k
 {
